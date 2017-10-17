@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.suwei.androidtest.ThirdActivity">
+    tools:context="com.suwei.androidtest.date_2017_10.test01.SecondActivity">
     <Button
-        android:id="@+id/button3"
-        android:text="Button3"
+        android:id="@+id/button_2"
+        android:text="Button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
