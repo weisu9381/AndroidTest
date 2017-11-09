@@ -46,7 +46,9 @@
             android:name=".date_2017_10.test02.DialogActivity"
             android:theme="@style/Theme.AppCompat.Dialog" />
         <activity android:name=".date_2017_10.test02.MainActivity" />
-        <activity android:name=".date_2017_10.test01.ThirdActivity"></activity>
+        <activity android:name=".date_2017_10.test01.ThirdActivity" />
+        <activity android:name=".date_2017_11.Date201711Activity" />
+        <activity android:name=".date_2017_11.test01.ExpandableListViewActivity"></activity>
     </application>
 
 </manifest>

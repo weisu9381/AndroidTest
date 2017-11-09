@@ -6,13 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.suwei.androidtest.date_2017_10.Date201710Activity">
     <Button
-        android:id="@+id/date_2017_10_test01"
-        android:text="测试1：关于Intent"
+        android:id="@+id/date_2017_11_test01"
+        android:text="测试1："
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/date_2017_10_test02"
-        android:text="测试2 Activity生命周期"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 </LinearLayout>
