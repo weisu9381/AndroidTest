@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.suwei.androidtest">
+          package="com.suwei.androidtest">
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -13,42 +13,55 @@
         android:theme="@style/AppTheme">
 
         <!-- *************8 主界面 ************* -->
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".ActivityA"
+            android:configChanges="orientation|keyboardHidden|screenSize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
         <!-- *************** 2017年10月 ******************** -->
         <!-- =========== 2017年10月 test01 ============ -->
-        <activity android:name=".date_2017_10.Date201710Activity" />
+        <activity android:name=".date_2017_10.Date201710Activity"/>
         <activity
             android:name=".date_2017_10.test01.FirstActivity"
             android:label="This is FirstActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="singleInstance"/>
         <activity
             android:name=".date_2017_10.test01.SecondActivity"
             android:label="This is SecondActivity">
             <intent-filter>
-                <action android:name="com.suwei.androidtest.ACTION_START" />
+                <action android:name="com.suwei.androidtest.ACTION_START"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="com.suwei.androidtest.MY_CATEGORY" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.suwei.androidtest.MY_CATEGORY"/>
 
-                <data android:scheme="http" />
+                <data android:scheme="http"/>
             </intent-filter>
         </activity>
         <!-- =========== 2017年10月 test02 ============== -->
-        <activity android:name=".date_2017_10.test02.NormalActivity" />
+        <activity android:name=".date_2017_10.test02.NormalActivity"/>
         <activity
             android:name=".date_2017_10.test02.DialogActivity"
-            android:theme="@style/Theme.AppCompat.Dialog" />
-        <activity android:name=".date_2017_10.test02.MainActivity" />
-        <activity android:name=".date_2017_10.test01.ThirdActivity" />
-        <activity android:name=".date_2017_11.Date201711Activity" />
-        <activity android:name=".date_2017_11.test01.ExpandableListViewActivity"></activity>
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name=".date_2017_10.test02.MainActivity"/>
+        <activity android:name=".date_2017_10.test01.ThirdActivity"/>
+        <activity android:name=".date_2017_11.Date201711Activity"/>
+        <activity android:name=".date_2017_11.test01.ExpandableListViewActivity"/>
+
+        <service
+            android:name=".MyService"
+            android:process="com.suwei.aidl"/>
+        <service
+            android:name=".TestService"/>
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".MyActivity">
+        </activity>
     </application>
 
 </manifest>
